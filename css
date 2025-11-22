@@ -1,0 +1,136 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #fff;
+  --accent: #0b6cf5;
+  --muted: #6b7280;
+  --radius: 12px;
+  --maxwidth: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+  background: var(--bg);
+  color: #08101a;
+}
+
+.site {
+  max-width: var(--maxwidth);
+  margin: 24px auto;
+  padding: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #06b6d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+nav .menu {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .hamburger {
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 1.4rem;
+}
+
+main {
+  margin-top: 18px;
+}
+
+.hero {
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(11,108,245,0.06), transparent);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+p.lead {
+  margin: 0;
+  color: var(--muted);
+}
+
+section#portfolio {
+  margin-top: 18px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(12,16,20,0.04);
+  margin-bottom: 16px;
+}
+
+.card header {
+  margin-bottom: 8px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.content p {
+  margin: 8px 0;
+  color: #0f1724;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 24px;
+  padding: 12px;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  nav .menu {
+    display: none;
+  }
+  nav .hamburger {
+    display: block;
+  }
+}
